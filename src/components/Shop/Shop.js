@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Product from "../Product/Product";
+import { Icon } from '@iconify/react';
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
@@ -41,11 +42,11 @@ const Shop = () => {
               <h2>Grand Total: $ 155954</h2>
 
               <div>
-                <button className="btn  btn-wide mt-5 bg-red-400 border-0	hover:bg-sky-700 text-black">
-                  Clear Cart
+                <button className="btn  btn-wide mt-5 bg-red-400 border-0	hover:bg-sky-700 text-black gap-6">
+                  Clear Cart <Icon icon="ooui:clear" />
                 </button>
-                <button className="btn btn-wide bg-yellow-300 text-black hover:bg-sky-700 border-0 mt-5">
-                  Review Order
+                <button className="btn btn-wide bg-yellow-300 text-black hover:bg-sky-700 border-0 mt-5 gap-3">
+                  Review Order <Icon icon="akar-icons:arrow-right" />
                 </button>
               </div>
             </div>
